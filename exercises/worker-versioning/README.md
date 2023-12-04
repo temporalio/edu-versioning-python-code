@@ -30,19 +30,27 @@ the complete version in the `solution` subdirectory.
 
 ## Part A: Assign a Build ID to Your Worker and Task Queue
 
-1. Edit the `worker.py` file to add a Build ID to your Worker and opt in to
+1. Before enabling Worker Versioning, try running this Workflow
+   without making any further modifications. Unlike our other exercises,
+   the `practice` subdirectory contains fully working example code.
+   Run `python worker.py` in one terminal to launch your Worker,
+   and `python starter.py` in another terminal to successfully run
+   your Workflow. This way, you can see what it's like to start using
+   Worker Versioning in an environment that's already running an
+   unversioned Worker.
+2. Edit the `worker.py` file to add a Build ID to your Worker and opt in to
    Worker Versioning. To do this, add `use_worker_versioning=True` and a
    `build_id` value to the call to create a new `Worker()`.
-2. Edit the `starter.py` file to call
+3. Edit the `starter.py` file to call
    `client.update_worker_build_id_compatibility()` before starting your
    Workflow.
-3. Run a new version of your worker by running `python worker.py` 
+4. Run a new version of your worker by running `python worker.py` 
    in a new terminal window. You do not need to terminate your old
    worker. If you restart your workflow by running `python starter.py`
    again, you should see some output from the terminal window of your
    new worker. This indicates that the workflow was chosen and run by
    the new, versioned worker, and the unversioned worker was ignored.
-4. To retrieve the information about build IDs from the CLI, run
+5. To retrieve the information about build IDs from the CLI, run
    `temporal task-queue get-build-ids --task-queue pizza-tasks`. You
    should see output similar to this:
    ```output
