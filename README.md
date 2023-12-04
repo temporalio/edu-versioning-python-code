@@ -1,40 +1,35 @@
-# Code Repository for Temporal 102 (Python)
-
+# Code Repository for Temporal Versioning (Python)
 This repository provides code used for exercises and demonstrations
-included in the Python version of the
-[Temporal 103](https://learn.temporal.io/courses/temporal_102)
+included in the Python version of the 
+[Versioning](https://learn.temporal.io/courses/versioning) 
 training course.
+
 
 ## Hands-On Exercises
 
-| Directory Name                | Exercise                                            |
-| :---------------------------- | :-------------------------------------------------- |
-| `exercises/version-workflow` | [Exercise 1](exercises/version-workflow/README.md) |
+Directory Name                     | Exercise
+:--------------------------------- | :-------------------------------------------------------
+`exercises/version-workflow`       | [Exercise 1](exercises/version-workflow/README.md)
+`exercises/worker-versioning`      | [Exercise 2](exercises/worker-versioning/README.md)
 
-## Examples for Self-Study
-
-| Directory Name           | Description                                                                                           |
-| :----------------------- | :---------------------------------------------------------------------------------------------------- |
 
 ## Reference
-
 The following links provide additional information that you may find helpful as you work through this course.
-
 - [General Temporal Documentation](https://docs.temporal.io/)
 - [Temporal Python SDK Documentation](https://python.temporal.io/)
 - [Python Language Documentation](https://docs.python.org/3/)
 - [Python Packaging and Virtual Environment Documentation](https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments)
 - [GitPod Documentation: Troubleshooting](https://www.gitpod.io/docs/troubleshooting)
 
-### Setup Your Python Virtual Environment
+### Set Up Your Python Virtual Environment
 
 All Python libraries for this course should be installed in a virtual environment.
 If you are running these exercises in the course's GitPod environment, there
 is a virtual environment already setup for you and you can skip this section.
-(Be certain that you are running Python 3.7+. If you system has)
+If you are running these exercises locally, be sure you are using Python 3.7+.
 
 1. Open a terminal window in the environment and change directories to the root directory of the
-   `edu-102-python-code` repository
+   `edu-versioning-python-code` repository
 2. Run the following command to create a virtual environment
 
 ```
@@ -90,7 +85,7 @@ However, the packages are already installed, so there is no need to run pip agai
 You can launch an exercise environment for this course in GitPod by
 clicking the button below:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporalio/edu-103-python-code)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporalio/edu-versioning-python-code)
 
 Alternatively, you can follow
 [these instructions](https://learn.temporal.io/getting_started/python/dev_environment/) to
