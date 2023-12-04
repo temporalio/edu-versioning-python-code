@@ -1,7 +1,7 @@
 import asyncio
 
 from shared import TASK_QUEUE_NAME, WORKFLOW_ID_PREFIX, create_pizza_order
-from temporalio.client import Client
+from temporalio.client import Client, BuildIdOpAddNewDefault
 from workflow import PizzaOrderWorkflow
 
 
@@ -15,7 +15,7 @@ async def main():
     # is below. Don't forget to change the BuildID to match your Worker.
     #
     # await client.update_worker_build_id_compatibility(
-    #     task_queue, BuildIdOpAddNewDefault("revision-yymmdd")
+    #     TASK_QUEUE_NAME, BuildIdOpAddNewDefault("revision-yymmdd")
     # )
 
     order = create_pizza_order()
