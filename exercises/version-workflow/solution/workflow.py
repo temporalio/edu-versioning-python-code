@@ -20,7 +20,7 @@ class LoanProcessingWorkflow:
         is_patched = workflow.patched("moved-thank-you-after-loop")
 
         if not is_patched:
-            confirmation = await workflow.execute_activity_method(
+            await workflow.execute_activity_method(
                 LoanProcessingActivities.send_thank_you_to_customer,
                 info,
                 start_to_close_timeout=timedelta(seconds=5),
