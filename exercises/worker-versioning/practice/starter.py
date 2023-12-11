@@ -1,4 +1,5 @@
 import asyncio
+import logging
 
 from shared import TASK_QUEUE_NAME, WORKFLOW_ID_PREFIX, create_pizza_order
 from temporalio.client import Client, BuildIdOpAddNewDefault
@@ -30,7 +31,7 @@ async def main():
 
     result = await handle.result()
 
-    print(f"Result:\n{result}")
+    logging.info(f"Result:\n{result}")
 
 
 if __name__ == "__main__":
