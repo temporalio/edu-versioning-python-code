@@ -49,7 +49,7 @@ class LoanProcessingWorkflow:
             await asyncio.sleep(10)
 
         if is_patched:
-            confirmation = await workflow.execute_activity_method(
+            await workflow.execute_activity_method(
                 LoanProcessingActivities.send_thank_you_to_customer,
                 info,
                 start_to_close_timeout=timedelta(seconds=5),
