@@ -18,6 +18,9 @@ async def main():
     # await client.update_worker_build_id_compatibility(
     #     TASK_QUEUE_NAME, BuildIdOpAddNewDefault("revision-yymmdd")
     # )
+    # **Note:** This code would usually only need to be run once. In a production
+	# system you would not run this as part of your client, but more likely as part
+	# of your build system on initial deployment, either via the SDK or the CLI.
 
     order = create_pizza_order()
 
