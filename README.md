@@ -11,8 +11,6 @@ It's important to remember that the example code used in this course was designe
 Directory Name                     | Exercise
 :--------------------------------- | :-------------------------------------------------------
 `exercises/version-workflow`       | [Exercise 1](exercises/version-workflow/README.md)
-`exercises/worker-versioning`      | [Exercise 2](exercises/worker-versioning/README.md)
-
 
 ## Reference
 The following links provide additional information that you may find helpful as you work through this course.
