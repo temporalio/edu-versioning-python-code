@@ -1,6 +1,21 @@
 {
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+    "go.alternateTools": {
+        "go": "/home/linuxbrew/.linuxbrew/bin/go",
     },
-    "python.formatting.provider": "none"
+    "markdown.styles": [
+        "style.css"
+    ],
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/usr/bin/bash",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "workbench.startupEditor": "none",
+    "workbench.editorAssociations": {
+        "README.md": "vscode.markdown.preview.editor"
+    }
 }
