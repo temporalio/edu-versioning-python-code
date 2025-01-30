@@ -34,7 +34,7 @@ exercise environment.
 ### Set Up Your Python Virtual Environment
 
 All Python libraries for this course should be installed in a virtual environment.
-If you are running these exercises in the course's GitPod environment, there
+If you are running these exercises in the course's Codespaces environment, there
 is a virtual environment already setup for you and you can skip this section.
 If you are running these exercises locally, be sure you are using Python 3.7+.
 
