@@ -62,7 +62,7 @@ course is activated as detailed in the course [README](../../README.md#setup-you
    send a thank you message to the customer before charging 
    them with the first loan payment, but this was a mistake.
    This Activity should run after the last payment, so move the lines of code used 
-   start to Activity execution 
+   to start Activity execution 
    ```python
     confirmation = await workflow.execute_activity_method(
         LoanProcessingActivities.send_thank_you_to_customer,
@@ -136,7 +136,7 @@ by the user-defined Change ID `moved-thank-you-after-loop`.
 3. Change the duration of the `await asyncio.sleep()` statement at the
    bottom of the loop back to 3 seconds. This is unrelated to
    versioning and changing the duration of a timer does not require versioning,
-   gbut will help you see the results more quickly.
+   but will help you see the results more quickly.
 4. Run `python -m pytest` again. You should find it succeeds this time,
    since you've used the Patching API to restore compatibility with
    the previous execution.
