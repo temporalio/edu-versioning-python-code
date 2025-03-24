@@ -38,7 +38,7 @@ course is activated as detailed in the course [README](../../README.md#setup-you
    **Decode Event History** toggle, and then click **Download**. Save
    the file as `history_for_original_execution.json` in your
    `practice` directory.
-   * NOTE: If you are running this exercise in GitPod, you may 
+   * NOTE: If you are running this exercise in Codespaces, you may 
      be unable to download the file, due to the embedded browser
 	 used in that environment. In this case, run the following 
 	 command from the `practice/tests`  directory `temporal workflow show --workflow-id=loan-processing-workflow-customer-a100 --fields long --output json > history_for_original_execution.json` to 
